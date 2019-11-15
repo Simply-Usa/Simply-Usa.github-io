@@ -1,0 +1,166 @@
+$orange: #F89722
+$lightOrange: #FDB51C
+$darkGreen: #388530
+$green: #53C546
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&display=swap')
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&display=swap&subset=cyrillic,cyrillic-ext')
+*
+	margin: 0
+	padding: 0
+	outline: none
+	box-sizing: border-box
+body
+	font-family: 'Open Sans'
+	color: #333333
+	background-color: #F8F8F8
+a
+	text-decoration: none
+	color: #000
+ul
+	list-style: none
+h2.title
+	font-size: 48px
+	position: relative
+	width: fit-content
+.lines
+	margin-bottom: 50px
+	span
+		height: 4px
+		display: block
+		margin: 10px 0
+		background-color: $green
+		&:first-child
+			width: 100%
+		&:nth-child(2)
+			width: 40%
+		&:last-child
+			width: 20%
+header
+	height: 100vh
+	width: 100%
+	padding-top: 20px
+	position: relative
+	background: url(../img/header-bg.jpg) no-repeat bottom center / cover
+	.header-top
+		margin-bottom: 30px
+	#grass-png
+		position: absolute
+		bottom: 0
+		z-index: 10
+		width: 100%
+	.menu
+		padding: 0
+		ul
+			display: flex
+			justify-content: space-between
+			height: 100%
+			align-items: center
+			li
+				a
+					font-weight: 600
+					font-size: 18px
+					text-transform: uppercase
+	.call
+		// border: 1px solid
+		display: flex
+		justify-content: center
+		align-items: flex-end
+		ul
+			// border: 1px solid
+			li
+				a
+					display: flex
+					align-items: center
+					font-weight: 600
+					font-size: 18px
+					text-align: right
+					img
+						margin-right: 10px
+	.main-header_cart
+		background-color: #fff
+		box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1)
+		border-radius: 20px 20px 0px 0px
+		padding: 10px 30px 120px 30px
+		text-align: center
+		height: 100%
+		h1
+			font-family: 'Roboto Condensed', sans-serif
+			font-size: 31px
+		form
+			& > div
+				// border: 1px solid
+				display: grid
+				grid-template-columns: 1fr 1fr
+				grid-gap: 20px
+				input
+					padding: 10px
+					border: none
+					border-bottom: 2px solid $green
+			button
+				width: 100%
+				border-radius: 10px
+				background-color: $green
+				height: 55px
+				font-weight: bold
+				font-size: 18px
+				cursor: pointer
+				color: #fff
+				margin-top: 20px
+				z-index: 12
+				position: relative
+		.pay-titles
+			// border: 1px solid
+			display: flex
+			justify-content: space-around
+			font-weight: bold
+			color: #000
+			margin-top: 47px
+			margin-bottom: 40px
+	.car-side
+		background: url(../img/car.png)
+		background-repeat: no-repeat
+		background-position-x: 30px
+		a
+			display: flex
+			align-items: center
+			position: absolute
+			right: 40px
+			img
+				margin-right: 10px
+.s2
+	font-weight: bold
+	margin-top: 20px
+	.text
+		padding: 50px 60px
+		font-size: 23px
+		border: 10px solid $lightOrange
+		border-radius: 25px
+		margin-bottom: 100px
+	.job-carts
+		display: grid
+		grid-template-columns: repeat(3, 33.33%)
+		font-size: 16px
+		text-align: center
+		grid-gap: 50px 10px
+		& > div
+			padding: 0 30px
+			p
+				margin-top: 10px
+.s3
+	padding: 90px 240px
+	margin-top: 100px
+	background: url(../img/s3-bg.jpg) no-repeat bottom center / cover
+	text-align: center
+	h2
+		font-size: 40px
+		color: #fff
+	button
+		padding: 13px 40px
+		background-color: $green
+		border: none
+		border-radius: 10px
+		font-size: 18px
+		color: #ffffff
+		margin-top: 20px
+		text-transform: uppercase
+		font-weight: bold
