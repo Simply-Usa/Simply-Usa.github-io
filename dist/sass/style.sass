@@ -22,7 +22,7 @@ ul
 button
 	cursor: pointer
 h2.title
-	font-size: 45px
+	font-size: 40px
 	position: relative
 	width: fit-content
 	text-transform: uppercase
@@ -342,6 +342,11 @@ header
 				background-position: center center !important
 				cursor: pointer
 				transition: .2s background-size ease-in-out
+				a
+					width: 100%
+					position: relative
+					display: block
+					height: 100%
 				&:hover
 					background-size: 110% 110% !important
 				&:first-child
@@ -378,3 +383,54 @@ header
 						text-transform: uppercase
 						font-size: 24px
 						color: #fff
+.s8
+	background: url(../img/sertif-bg.jpg)
+	background-size: cover
+	background-repeat: no-repeat
+	background-position: center center
+	height: 781px
+	padding-top: 50px
+	margin-top: 60px
+	.container-fluid
+		padding: 0 50px
+		.row
+			text-align: center
+			a
+				color: #fff
+			.slider:last-child
+				.owl-nav
+					button
+						background-color: $green
+			h2.title
+				color: #fff
+			.owl-carousel
+				// border: 1px solid
+				height: 500px
+				display: flex
+				align-items: center
+				.owl-nav
+					position: absolute
+					z-index: 30
+					width: 100%
+					display: flex
+					justify-content: space-between
+					margin: 0
+					top: 50%
+					transform: translateY(-50%)
+					button
+						height: 55px 
+						width: 55px
+						border-radius: 50%
+						font-size: 30px
+						background-color: $orange
+				.owl-item
+					// border: 1px solid
+					overflow: visible
+				.owl-item.active.center
+					// border: 1px solid
+					transition: .3s ease-in-out
+					transform: scale(1.2)
+				.owl-stage-outer
+					// border: 1px solid
+					height: 100%
+					padding-top: 100px

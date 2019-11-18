@@ -14,7 +14,8 @@ $(document).ready(function(){
   });
   $('.owl-carousel').owlCarousel({
     loop:true,
-    margin: 20,
+    center: true,
+    margin: 10,
     nav:true,
     navText: ["<i class='fas fa-chevron-left'></i>","<i class='fas fa-chevron-right'></i>"],
     responsive:{
@@ -29,4 +30,5 @@ $(document).ready(function(){
       }
     }
   });
+  $('a[data-rel^=lightcase]').lightcase();
 });
