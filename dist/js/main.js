@@ -35,11 +35,28 @@ $(document).ready(function(){
   var movementStrength = 25;
   var height = movementStrength / $(window).height();
   var width = movementStrength / $(window).width();
-  $(".s2").mousemove(function(e){
+  $(".s2, .s4, .s5").mousemove(function(e){
     var pageX = e.pageX - ($(window).width() / 2);
     var pageY = e.pageY - ($(window).height() / 2);
     var newvalueX = width * pageX * -1 + 50;
     var newvalueY = height * pageY * -1 - 100;
-    $('.s2').css("background-position", newvalueX+"px     "+newvalueY+"px");
+    $('.s2, .s4').css("background-position", newvalueX+"px    "+newvalueY+"px");
+    var pageX = e.pageX - ($(window).width() / 2000);
+    var pageY = e.pageY - ($(window).height() / 2000);
+    $('.listik').css({
+      "left": newvalueX - 70 + "px",
+      "top": newvalueY+ 800 +"px"
+    });
+    $('.listik-2').css({
+      "right": newvalueX  + "px",
+      "top": newvalueY + 600 +"px"
+    });
+
   });
+  $(".menu ul").on("click","a", function (event) {
+    event.preventDefault();
+    var id  = $(this).attr('href'),
+        top = $(id).offset().top;
+    $('body,html').animate({scrollTop: top}, 1500);
+});
 });

@@ -7,6 +7,7 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" href="app/css/style.css">
 	<title>Agrotech</title>
+	<link rel="icon" href="app/img/title-logo.png" sizes="192x192">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous" />
 	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightcase/2.5.0/css/lightcase.min.css" integrity="sha256-+bytSlt6ZKCfCCfKimCjD4CsDW9a0GpM85ZCOBDiLVI=" crossorigin="anonymous" />
@@ -16,30 +17,31 @@
 	
 </head>
 <body>
+
 	<header>
 		<div class="container">
 			<div class="row header-top">
-				<div class="col-xl-2 order-1 logo">
+				<div class="col-xl-2 col-sm-2 col-lg-2 col-md-2 order-1 order-xl-1 order-lg-1 order-md-1 logo">
 					<img src="app/img/logo.png" alt="">
 				</div>
-				<div class="col-xl-7 order-2 menu">
+				<div class="col-xl-7 col-lg-7 col-md-7 order-2 order-xl-2 order-lg-2 order-md-3 menu">
 					<ul>
-						<li><a href="">Главная</a></li>
-						<li><a href="">Преимущества</a></li>
-						<li><a href="">Товары</a></li>
-						<li><a href="">Как мы работаем</a></li>
-						<li><a href="">Контакты</a></li>
+						<li><a href=""><i class="fas fa-home"></i></a></li>
+						<li><a href="#s2">Преимущества</a></li>
+						<li><a href="#s4">Каталог техники</a></li>
+						<!-- <li><a href="">Как мы работаем</a></li>ы -->
+						<li><a href="#footer">Контакты</a></li>
 					</ul>
 				</div>
-				<div class="col-xl-3 order-3 call">
+				<div class="col-xl-3 col-sm-10 col-lg-10 col-md-10 order-3 order-xl-3 order-lg-3 order-md-2 call">
 					<ul>
-						<li><a href="tel:+77762452359"><img src="app/img/whatsapp.svg" alt="">+7 (776) 245-23-59</a></li>
-						<li><a href="https://wa.me/+77016221111"><img src="app/img/phone.svg" alt="">+7 (701) 622-11-11 <br>WhatsApp</a></li>
+						<li><a href="tel:+77762452359"><img src="app/img/whatsapp.svg" alt="">+7 (776) 245-23-59<br>WhatsApp</a></li>
+						<li><a href="https://wa.me/+77016221111"><img src="app/img/phone.svg" alt="">+7 (701) 622-11-11</a></li>
 					</ul>
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-xl-6 main-header_cart">
+				<div class="col-xl-6 col-lg-6 main-header_cart">
 					<h1>ПРОДАЕМ И ДОСТАВЛЯЕМ ОБНОВЛЕННУЮ СЕЛЬСКО-ХОЗЯЙСТВЕННУЮ ТЕХНИКУ ПО ВСЕМУ КАЗАХСТАНУ И СНГ</h1>
 					<div class="pay-titles">
 						<div>
@@ -60,17 +62,17 @@
 							<input type="text" placeholder="Ваше имя...">
 							<input type="text" placeholder="Номер телефона..." required>
 						</div>
-						<button type="submit">Купить за 50% стоимости</button>
+						<button type="submit" class="blick">Купить за 50% стоимости</button>
 					</form>
 				</div>
-				<div class="col-xl-6 car-side">
+				<div class="col-xl-6 col-lg-6 car-side">
 					<a href="yanglichev.abdulla@inbox.ru"><img src="app/img/mail.svg" alt="">yanglichev.abdulla@inbox.ru</a>
 				</div>
 			</div>
 		</div>
 		<img src="app/img/grass.png" class="grass-png" alt="Газон">
 	</header>
-	<section class="s2">
+	<section class="s2" id="s2">
 		<div class="container">
 			<div class="row">
 				<div class="col-xl-12">
@@ -128,12 +130,12 @@
 	<section class="s3">
 		<div class="container">
 			<h2>Мы предлагаем клиентам высокое качество без накруток по <span>самым низким ценам</span>. Нашли такой же товар дешевле? С нас <span>скидка 5%</span></h2>
-			<button>Связаться с нами</button>
+			<button class="blick">Связаться с нами</button>
 		</div>
 	</section>
-	<section class="s4">
+	<section class="s4" id="s4">
 		<div class="container">
-			<h2 class="title">Наши товары
+			<h2 class="title">Каталог техники
 				<div class="lines">
 					<span></span>
 					<span></span>
@@ -156,8 +158,8 @@
 						<img src="app/img/ovs-25.png" alt="">
 						<div class="take-product">
 							<p>ОВС-25</p>
-							<button>КУПИТЬ</button>
-							<a href="">ПОДРОБНЕЕ</a>
+							<button class="blick">КУПИТЬ</button>
+							<a href="" class="blick">ПОДРОБНЕЕ</a>
 						</div>
 					</div>
 					
@@ -165,8 +167,8 @@
 						<img src="app/img/ovs-25.png" alt="">
 						<div class="take-product">
 							<p>SM-25</p>
-							<button>КУПИТЬ</button>
-							<a href="">ПОДРОБНЕЕ</a>
+							<button class="blick">КУПИТЬ</button>
+							<a href="" class="blick">ПОДРОБНЕЕ</a>
 						</div>
 					</div>
 					
@@ -174,80 +176,80 @@
 						<img src="app/img/ovs-25.png" alt="">
 						<div class="take-product">
 							<p>petcus-25</p>
-							<button>КУПИТЬ</button>
-							<a href="">ПОДРОБНЕЕ</a>
+							<button class="blick">КУПИТЬ</button>
+							<a href="" class="blick">ПОДРОБНЕЕ</a>
 						</div>
 					</div>
 					<div class="item kshp">
 						<img src="app/img/ovs-25.png" alt="">
 						<div class="take-product">
 							<p>petcus-25</p>
-							<button>КУПИТЬ</button>
-							<a href="">ПОДРОБНЕЕ</a>
+							<button class="blick">КУПИТЬ</button>
+							<a href="" class="blick">ПОДРОБНЕЕ</a>
 						</div>
 					</div>
 					<div class="item serno">
 						<img src="app/img/ovs-25.png" alt="">
 						<div class="take-product">
 							<p>petcus-25</p>
-							<button>КУПИТЬ</button>
-							<a href="">ПОДРОБНЕЕ</a>
+							<button class="blick">КУПИТЬ</button>
+							<a href="" class="blick">ПОДРОБНЕЕ</a>
 						</div>
 					</div>
 					<div class="item serno">
 						<img src="app/img/ovs-25.png" alt="">
 						<div class="take-product">
 							<p>petcus-25</p>
-							<button>КУПИТЬ</button>
-							<a href="">ПОДРОБНЕЕ</a>
+							<button class="blick">КУПИТЬ</button>
+							<a href="" class="blick">ПОДРОБНЕЕ</a>
 						</div>
 					</div>
 					<div class="item serno">
 						<img src="app/img/ovs-25.png" alt="">
 						<div class="take-product">
 							<p>petcus-25</p>
-							<button>КУПИТЬ</button>
-							<a href="">ПОДРОБНЕЕ</a>
+							<button class="blick">КУПИТЬ</button>
+							<a href="" class="blick">ПОДРОБНЕЕ</a>
 						</div>
 					</div>
 					<div class="item serno">
 						<img src="app/img/ovs-25.png" alt="">
 						<div class="take-product">
 							<p>petcus-25</p>
-							<button>КУПИТЬ</button>
-							<a href="">ПОДРОБНЕЕ</a>
+							<button class="blick">КУПИТЬ</button>
+							<a href="" class="blick">ПОДРОБНЕЕ</a>
 						</div>
 					</div>
 					<div class="item serno">
 						<img src="app/img/ovs-25.png" alt="">
 						<div class="take-product">
 							<p>petcus-25</p>
-							<button>КУПИТЬ</button>
-							<a href="">ПОДРОБНЕЕ</a>
+							<button class="blick">КУПИТЬ</button>
+							<a href="" class="blick">ПОДРОБНЕЕ</a>
 						</div>
 					</div>
 					<div class="item serno">
 						<img src="app/img/ovs-25.png" alt="">
 						<div class="take-product">
 							<p>petcus-25</p>
-							<button>КУПИТЬ</button>
-							<a href="">ПОДРОБНЕЕ</a>
+							<button class="blick">КУПИТЬ</button>
+							<a href="" class="blick">ПОДРОБНЕЕ</a>
 						</div>
 					</div>
 					<div class="item serno">
 						<img src="app/img/ovs-25.png" alt="">
 						<div class="take-product">
 							<p>petcus-25</p>
-							<button>КУПИТЬ</button>
-							<a href="">ПОДРОБНЕЕ</a>
+							<button class="blick">КУПИТЬ</button>
+							<a href="" class="blick">ПОДРОБНЕЕ</a>
 						</div>
 					</div>
 					<div class="item serno">
 						<img src="app/img/ovs-25.png" alt="">
 						<div class="take-product">
 							<p>petcus-25</p>
-							<button>КУПИТЬ</button>
-							<a href="">ПОДРОБНЕЕ</a>
+							<button class="blick">КУПИТЬ</button>
+							<a href="" class="blick">ПОДРОБНЕЕ</a>
 						</div>
 					</div>
 				</div>
@@ -255,10 +257,11 @@
 		</div>	
 	</section>
 	<section class="s5">
+		<img src="app/img/s5-list.png" class="listik" alt="Листик">
 		<div class="container">
 			<div class="order-tech">
 				<h2>Заказывайте технику прямо сейчас и получите <span>от 5% до 10%</span> на каждую следующую покупку!</h2>
-				<button>получить скидку</button>
+				<button class="blick">получить скидку</button>
 			</div>
 			<h2 class="title">
 				Как выбрать и заказать нужную технику?
@@ -269,51 +272,52 @@
 				</div>
 			</h2>
 			<div class="row instruction">
-				<div class="col-xl-3 col-lg-3 instruction_item">
+				<div class="col-xl-3 col-lg-3 col-md-5 instruction_item">
 					<div class="royal">1</div>
 					<img src="app/img/royal-1.svg" alt="Люди">
 				</div>
-				<div class="col-xl-9 col-lg-9 instruction_text">
+				<div class="col-xl-9 col-lg-9 col-md-7 instruction_text">
 					<p>Оставьте заявку или свяжитесь с нами по телефону. Менеджер подберет варианты и поможет определиться с выбором.</p>
 				</div>
 			</div>
 			<div class="row instruction">
-				<div class="col-xl-3 col-lg-3 instruction_item">
+				<div class="col-xl-3 col-lg-3 col-md-5 instruction_item">
 					<div class="royal">2</div>
 					<img src="app/img/royal-2.svg" alt="Люди">
 				</div>
-				<div class="col-xl-9 col-lg-9 instruction_text">
+				<div class="col-xl-9 col-lg-9 col-md-7 instruction_text">
 					<p>Вышлет подробное портфолио на каждую интересующую модель: фото, видео материалы, описание, техническую документацию. При помощи видеосвязи наш специалист покажет машину в режиме реального времени и ответит на все интересующие вопросы.</p>
 				</div>
 			</div>
 			<div class="row instruction">
-				<div class="col-xl-3 col-lg-3 instruction_item">
+				<div class="col-xl-3 col-lg-3 col-md-5 instruction_item">
 					<div class="royal">3</div>
 					<img src="app/img/royal-3.svg" alt="Люди">
 				</div>
-				<div class="col-xl-9 col-lg-9 instruction_text">
+				<div class="col-xl-9 col-lg-9 col-md-7 instruction_text">
 					<p>После оформления заказа, мы на собственном автотранспорте доставляем технику в любой город России или Казахстана без предоплаты.</p>
 				</div>
 			</div>
 			<div class="row instruction">
-				<div class="col-xl-3 col-lg-3 instruction_item">
+				<div class="col-xl-3 col-lg-3 col-md-5 instruction_item">
 					<div class="royal">4</div>
 					<img src="app/img/royal-4.svg" alt="Люди">
 				</div>
-				<div class="col-xl-9 col-lg-9 instruction_text">
+				<div class="col-xl-9 col-lg-9 col-md-7 instruction_text">
 					<p>При получении Вы осматриваете и проверяете работоспособность техники.</p>
 				</div>
 			</div>
 			<div class="row instruction">
-				<div class="col-xl-3 col-lg-3 instruction_item">
+				<div class="col-xl-3 col-lg-3 col-md-5 instruction_item">
 					<div class="royal">5</div>
 					<img src="app/img/royal-5.svg" alt="Люди">
 				</div>
-				<div class="col-xl-9 col-lg-9 instruction_text">
+				<div class="col-xl-9 col-lg-9 col-md-7 instruction_text">
 					<p>Оплачиваете товар</p>
 				</div>
 			</div>
 		</div>
+		<img src="app/img/listik-2.png" class="listik-2" alt="Листочик">
 	</section>
 	<section class="s6">
 		<div class="container">
@@ -378,7 +382,7 @@
 						</div>
 					</h2>
 				</div>
-				<div class="col-xl-6 col-md-12 col-sm-12 slider">
+				<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 slider">
 					<div class="owl-carousel">
 						<div> <a href="app/img/setif-1.png" data-rel="lightcase:myCollection"><img src="app/img/setif-1.png" alt=""></a> </div>
 						<div> <a href="app/img/setif-1.png" data-rel="lightcase:newCollection"><img src="app/img/setif-1.png" alt=""></a> </div>
@@ -387,7 +391,7 @@
 					</div>
 					<a href="">смотреть все</a>
 				</div>
-				<div class="col-xl-6 col-md-12 col-sm-12 slider">
+				<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 slider">
 					<div class="owl-carousel">
 						<div> <a href="app/img/setif-1.png" data-rel="lightcase:newCollection"><img src="app/img/setif-1.png" alt=""></a> </div>
 						<div> <a href="app/img/setif-1.png" data-rel="lightcase:newCollection"><img src="app/img/setif-1.png" alt=""></a> </div>
@@ -399,7 +403,7 @@
 			</div>
 		</div>
 	</section>
-	<footer>
+	<footer id="footer">
 		<div class="container">
 			<div class="row">
 				<div class="col-xl-6">
@@ -455,13 +459,13 @@
 									<input type="text" placeholder="Ваше имя...">
 									<input type="text" placeholder="Номер телефона..." required>
 								</div>
-								<button type="submit">Заказать</button>
+								<button type="submit" class="blick">Заказать</button>
 							</form>
 						</div>
 					</div>
 				</div>
 				<div class="col-xl-6">
-					<a class="dg-widget-link" href="http://2gis.kz/almaty/firm/9429940001444733/center/76.917072,43.257894/zoom/16?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=bigMap">Посмотреть на карте Алматы</a><div class="dg-widget-link"><a href="http://2gis.kz/almaty/firm/9429940001444733/photos/9429940001444733/center/76.917072,43.257894/zoom/17?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=photos">Фотографии компании</a></div><div class="dg-widget-link"><a href="http://2gis.kz/almaty/center/76.917072,43.257894/zoom/16/routeTab/rsType/bus/to/76.917072,43.257894╎Умит, торговый дом?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=route">Найти проезд до Умит, торговый дом</a></div><script charset="utf-8" src="https://widgets.2gis.com/js/DGWidgetLoader.js"></script><script charset="utf-8">new DGWidgetLoader({"width":640,"height":600,"borderColor":"#a3a3a3","pos":{"lat":43.257894,"lon":76.917072,"zoom":16},"opt":{"city":"almaty"},"org":[{"id":"9429940001444733"}]});</script><noscript style="color:#c00;font-size:16px;font-weight:bold;">Виджет карты использует JavaScript. Включите его в настройках вашего браузера.</noscript>
+					<a class="dg-widget-link" href="http://2gis.kz/almaty/firm/9429940001444733/center/76.917072,43.257894/zoom/16?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=bigMap">Посмотреть на карте Алматы</a><div class="dg-widget-link"><a href="http://2gis.kz/almaty/firm/9429940001444733/photos/9429940001444733/center/76.917072,43.257894/zoom/17?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=photos">Фотографии компании</a></div><div class="dg-widget-link"><a href="http://2gis.kz/almaty/center/76.917072,43.257894/zoom/16/routeTab/rsType/bus/to/76.917072,43.257894╎Умит, торговый дом?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=route">Найти проезд до Умит, торговый дом</a></div><script charset="utf-8" src="https://widgets.2gis.com/js/DGWidgetLoader.js"></script><script charset="utf-8">new DGWidgetLoader({"width":100 + '%',"height":600,"borderColor":"#a3a3a3","pos":{"lat":43.257894,"lon":76.917072,"zoom":16},"opt":{"city":"almaty"},"org":[{"id":"9429940001444733"}]});</script><noscript style="color:#c00;font-size:16px;font-weight:bold;">Виджет карты использует JavaScript. Включите его в настройках вашего браузера.</noscript>
 				</div>
 			</div>
 		</div>

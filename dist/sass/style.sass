@@ -5,6 +5,28 @@ $green: #53C546
 @import url('https://fonts.googleapis.com/css?family=Oswald:400,500,600,700&display=swap')
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&display=swap')
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&display=swap&subset=cyrillic,cyrillic-ext')
+@keyframes pulse
+	to
+		background-color: rgba(255, 255, 255, .4)
+button.blick, a.blick
+	position: relative
+	overflow: hidden
+	&:hover
+		animation: pulse .3s ease-in-out
+		&:before
+			transition: 1s ease-in-out
+			transform: translateX(500px) rotate(29deg)
+	&:before
+		content: ''
+		position: absolute
+		height: 500px
+		top: 0
+		box-shadow: 0 0 30px 10px #fff
+		left: -60px
+		width: 40px
+		background-color: rgba(255,255,255,.3)
+		transform: translateY(-300px) rotate(29deg)
+
 *
 	margin: 0
 	padding: 0
@@ -45,11 +67,13 @@ h2.title
 	z-index: 100
 	width: 100%
 header
-	height: 95vh
+	height: auto
 	width: 100%
 	padding-top: 20px
 	position: relative
-	background: url(../img/header-bg.jpg) no-repeat bottom center / cover
+	background: url(../img/header-bg.jpg)
+	background-size: 130%
+	background-repeat: no-repeat
 	.header-top
 		margin-bottom: 30px
 	.menu
@@ -162,7 +186,7 @@ header
 	// margin-top: 100px
 	background: url(../img/s3-bg.jpg) no-repeat bottom center / cover
 	text-align: center
-	margin-bottom: 50px
+	// margin-bottom: 50px
 	h2
 		font-size: 40px
 		color: #fff
@@ -177,7 +201,12 @@ header
 		text-transform: uppercase
 		font-weight: bold
 .s4
+	background: url(../img/s4-bg.png)
+	background-position: 100% 100%
+	background-size: cover
+	background-repeat: no-repeat
 	padding-bottom: 400px
+	padding-top: 50px
 	.filter-container
 		.filter-content
 			position: relative
@@ -243,7 +272,19 @@ header
 						background-color: $darkGreen
 						color: #fff
 .s5
+	position: relative
 	background-color: #fff
+	.listik-2
+		position: absolute
+		right: 0
+		z-index: 100
+		top: 300px
+	.listik
+		position: absolute
+		left: 0
+		width: 250px
+		top: 500px
+		z-index: 100
 	.container
 		transform: translateY(-200px)
 		.order-tech
@@ -395,7 +436,8 @@ header
 	background-size: cover
 	background-repeat: no-repeat
 	background-position: center center
-	height: 781px
+	height: auto
+	padding-bottom: 20px
 	padding-top: 50px
 	margin-top: 60px
 	.container-fluid
@@ -487,3 +529,110 @@ footer
 				margin-top: 20px
 				z-index: 12
 				position: relative
+@media (max-width: 1440px)
+	h2.title
+		font-size: 35px
+	.s3
+		padding: 20px 50px
+	.s5
+		.container
+			.order-tech
+				padding: 50px 10px 20px 200px
+	.s8
+		.container-fluid
+			.row
+				.owl-carousel
+					.owl-nav
+						top: 40%
+	footer
+		.container
+			form
+				margin-bottom: 20px
+@media (max-width: 1200px)
+	.s5
+		.container
+			.order-tech
+				padding: 50px 10px 20px 280px
+	header
+		.container
+			.row.header-top
+				.menu
+					display: none
+			.call
+				ul
+					padding: 0
+					display: grid
+					grid-template-columns: 1fr 1fr
+					grid-gap: 20px
+					align-items: center
+					justify-content: center
+					li
+						display: block
+						// border: 1px solid
+@media (max-width: 768px)
+	.s8 .container-fluid .row h2.title 
+		text-align: left
+	.s3
+		padding: 20px 0
+		h2
+			font-size: 20px
+	header
+		
+		.main-header_cart
+			.pay-titles
+				div
+					margin: 10px
+			h1
+				font-size: 24px
+		.container
+			.car-side
+				display: none
+	.s5
+		.container
+			.order-tech
+				padding: 0
+				display: flex
+				justify-content: center
+				align-items: center
+				flex-direction: column
+				h2
+					font-size: 24px
+					padding: 20px
+	.s2
+		.container
+			.row
+				.text
+					font-size: 20px
+					padding: 20px
+@media (max-width: 576px)
+	header .container .call ul
+		background-color: rgba(255,255,255,.5)
+		padding: 0 10px
+		border-radius: 10px
+	.s7
+		.container
+			.gallary
+				div
+					&:nth-child(7)
+						a
+							font-size: 14px
+	.s5
+		.container
+			.order-tech
+				height: auto
+				padding-bottom: 20px
+	h2.title
+		font-size: 20px
+	header
+		.main-header_cart
+			form
+				& > div
+					grid-template-columns: 1fr
+	.s2
+		.job-carts
+			grid-template-columns: repeat(2, 50%)
+	footer
+		.container
+			form
+				& > div
+					grid-template-columns: 1fr
