@@ -2,6 +2,7 @@ $orange: #F89722
 $lightOrange: #FDB51C
 $darkGreen: #388530
 $green: #53C546
+@import url('https://fonts.googleapis.com/css?family=Oswald:400,500,600,700&display=swap')
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&display=swap')
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&display=swap&subset=cyrillic,cyrillic-ext')
 *
@@ -18,10 +19,13 @@ a
 	color: #000
 ul
 	list-style: none
+button
+	cursor: pointer
 h2.title
-	font-size: 48px
+	font-size: 45px
 	position: relative
 	width: fit-content
+	text-transform: uppercase
 .lines
 	margin-bottom: 50px
 	span
@@ -151,6 +155,7 @@ header
 	margin-top: 100px
 	background: url(../img/s3-bg.jpg) no-repeat bottom center / cover
 	text-align: center
+	margin-bottom: 50px
 	h2
 		font-size: 40px
 		color: #fff
@@ -164,3 +169,212 @@ header
 		margin-top: 20px
 		text-transform: uppercase
 		font-weight: bold
+.s4
+	padding-bottom: 400px
+	.filter-container
+		.filter-content
+			position: relative
+			display: grid
+			grid-gap: 20px 70px
+			grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))
+			height: auto !important
+			.item
+				border-radius: 10px
+				top: 0 !important
+				left: 0 !important
+				position: relative !important
+				transition: .00001s !important
+				background-color: #fff
+				overflow: hidden
+				text-align: center
+				.take-product
+					background-color: #333333
+					display: grid
+					text-align: center
+					padding: 0 20px 20px 20px
+					grid-gap: 0
+					button, a
+						border: 2px solid
+						border-radius: 10px
+						max-width: 150px
+						min-width: 130px
+						height: 40px
+						display: flex
+						align-items: center
+						justify-content: center
+						font-size: 18px
+						font-weight: bold
+						margin: auto
+					button
+						grid-column: 1 / 2
+						background: none
+						color: $orange
+					a
+						grid-column: 2 / 3
+						color: $green
+					p
+						color: #fff
+						font-size: 24px
+						font-weight: bold
+						grid-column: 1 / 3
+						margin: 15px 0 25px 0
+		.filter-menu
+			ul
+				display: grid
+				margin-bottom: 20px
+				grid-template-columns: repeat(auto-fit, minmax(10%, 100px))
+				li
+					margin-right: 10px
+					cursor: pointer
+					border-radius: 5px
+					color: #fff
+					font-weight: bold
+					text-align: center
+					padding: 5px 0
+					background-color: $green
+					&.active
+						background-color: $darkGreen
+						color: #fff
+.s5
+	background-color: #fff
+	.container
+		transform: translateY(-200px)
+		.order-tech
+			background-color: #fff
+			box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1)
+			border-radius: 10px
+			background: url(../img/woman.jpg) no-repeat bottom center / cover
+			height: 376px
+			padding: 85px 135px 130px 350px
+			font-size: 24px
+			text-align: center
+			font-family: 'Oswald', sans-serif
+			text-transform: uppercase
+			margin-bottom: 50px
+			button
+				background-color: $green
+				border: none
+				color: #F8F8F8
+				font-weight: bold
+				font-size: 18px
+				font-family: 'Open Sans'
+				padding: 15px 38px
+				border-radius: 10px
+				text-transform: uppercase
+				margin-top: 30px
+		.instruction
+			&:not(:last-child)
+				margin-bottom: 60px
+			&:nth-child(2n)
+				.instruction_item
+					.royal
+						background-color: $orange
+			.instruction_text
+				display: flex
+				align-items: center
+				font-size: 18px
+				font-weight: bold
+			.instruction_item
+				display: flex
+				padding: 0
+				justify-content: space-between
+				.royal
+					width: 130px
+					height: 130px
+					background-color: #6FCF97
+					display: flex
+					align-items: center
+					justify-content: center
+					font-size: 64px
+					font-weight: bold
+					color: #fff
+					border-radius: 10px
+.s6
+	height: 536px
+	background: url(../img/s6-bg.jpg) no-repeat center center / cover
+	padding: 40px 0
+	margin-bottom: 50px
+	h2.title
+		color: #fff
+	.container
+		.owl-carousel
+			.owl-nav	
+				position: absolute
+				top: 35%
+				width: 105%
+				display: flex
+				justify-content: space-between
+				// border: 1px solids
+				transform: translateX(-25px)
+				button
+					width: 54px
+					height: 54px
+					border-radius: 50%
+					background-color: $green
+					font-size: 25px
+					color: #fff
+			.owl-item
+				border-radius: 15px
+				background-color: #fff
+				height: 231px
+				font-size: 36px
+				display: flex
+				justify-content: center
+				align-items: center
+				text-align: center
+				text-transform: uppercase
+				font-weight: 600
+
+.s7
+	.container
+		.gallary
+			display: grid;
+			grid-template-columns: repeat(12, 1fr)
+			grid-template-rows: repeat(6, 1fr)
+			grid-column-gap: 0px
+			grid-row-gap: 0px
+			height: 500px
+			padding: 0
+			grid-gap: 5px
+			div
+				background-size: 100% 100% !important
+				background-repeat: no-repeat !important
+				background-position: center center !important
+				cursor: pointer
+				transition: .2s background-size ease-in-out
+				&:hover
+					background-size: 110% 110% !important
+				&:first-child
+					background: url(../img/land-1.jpg)
+					grid-area: 1 / 1 / 4 / 5
+				&:nth-child(2)
+					background: url(../img/grass-1.jpg) 
+					grid-area: 4 / 1 / 7 / 5
+				&:nth-child(3)
+					background: url(../img/land-2.jpg)
+					grid-area: 1 / 5 / 3 / 7
+				&:nth-child(4)
+					background: url(../img/land-4.jpg)
+					grid-area: 1 / 7 / 3 / 13
+				&:nth-child(5)
+					background: url(../img/land-3.jpg)
+					grid-area: 3 / 5 / 7 / 10
+				&:nth-child(6)
+					background: url(../img/land-6.jpg)
+					grid-area: 3 / 10 / 5 / 13
+				&:nth-child(7)
+					background: url(../img/show-more.jpg)
+					background-size: 120% !important
+					grid-area: 5 / 10 / 7 / 13
+					a
+						color: #fffs
+						width: 100%
+						height: 100%
+						display: flex
+						justify-content: center
+						align-items: center
+						text-align: center
+						font-weight: bold
+						text-transform: uppercase
+						font-size: 24px
+						color: #fff
