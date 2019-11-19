@@ -78,9 +78,15 @@ header
 		margin-bottom: 30px
 	.menu
 		padding: 0
+		width: 100%
+		display: flex
+		align-items: center
+		.menu-wrap
+			width: 100%
 		ul
 			display: flex
 			justify-content: space-between
+			width: 100%
 			height: 100%
 			align-items: center
 			li
@@ -259,6 +265,7 @@ header
 				display: grid
 				margin-bottom: 20px
 				grid-template-columns: repeat(auto-fit, minmax(10%, 100px))
+				grid-gap: 20px
 				li
 					margin-right: 10px
 					cursor: pointer
@@ -557,7 +564,54 @@ footer
 		.container
 			.row.header-top
 				.menu
-					display: none
+					position: fixed
+					top: 0
+					right: 0
+					z-index: 150
+					.menu-wrap
+						display: none
+					.toggle-menu
+						z-index: 200
+						position: absolute
+						right: 5px
+						top: 30px
+						// border: 1px solid
+						height: 35px
+						span
+							display: block
+							width: 50px
+							height: 3px
+							background-color: #333333
+							&:after
+								content: ''
+								display: block
+								width: 50px
+								height: 3px
+								background-color: #333333
+								position: absolute
+								top: 10px
+								left: 0
+							&:before
+								content: ''
+								display: block
+								width: 50px
+								height: 3px
+								background-color: #333333
+								position: absolute
+								bottom: 10px
+								left: 0
+					ul
+						box-shadow: 0 0 15px 0 #444
+						display: flex
+						border-radius: 0 0 10px 10px 0
+						flex-direction: column
+						justify-content: space-around
+						background-color: $green
+						height: 30vh
+						li
+							a
+								color: #333333
+								font-weight: bold
 			.call
 				ul
 					padding: 0
@@ -570,6 +624,11 @@ footer
 						display: block
 						// border: 1px solid
 @media (max-width: 768px)
+	.s7
+		.container
+			.gallary
+				grid-template-rows: repeat(2, 40px)
+				height: 250px
 	.s8 .container-fluid .row h2.title 
 		text-align: left
 	.s3
@@ -577,7 +636,6 @@ footer
 		h2
 			font-size: 20px
 	header
-		
 		.main-header_cart
 			.pay-titles
 				div
@@ -602,9 +660,18 @@ footer
 		.container
 			.row
 				.text
-					font-size: 20px
+					font-size: 16px
 					padding: 20px
 @media (max-width: 576px)
+	.s6 .container .owl-carousel .owl-nav
+		width: 115%
+	header
+		.container
+			.row.header-top
+				.call
+					a
+						font-size: 14px
+						white-space: nowrap
 	header .container .call ul
 		background-color: rgba(255,255,255,.5)
 		padding: 0 10px
@@ -630,9 +697,15 @@ footer
 					grid-template-columns: 1fr
 	.s2
 		.job-carts
-			grid-template-columns: repeat(2, 50%)
+			grid-template-columns: 1fr
 	footer
 		.container
 			form
 				& > div
 					grid-template-columns: 1fr
+@media (max-width: 320px)
+	header .container .call ul
+		display: grid
+		grid-template-columns: 1fr
+		grid-gap: 20px
+		width: 100%
