@@ -101,7 +101,7 @@ $(document).ready(function(){
 			if (!div.is(e.target) // если клик был не по нашему блоку
 			&& div.has(e.target).length === 0) { // и не по его дочерним элементам
 				$('.menu .menu-wrap').slideUp(); // скрываем его
-				$('.menu .toggle-menu').toggleClass('is-active');
+				$('.menu .toggle-menu').removeClass('is-active');
 			}
 		});
 	}
