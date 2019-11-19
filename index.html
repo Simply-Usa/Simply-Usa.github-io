@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="app/css/style.css">
 	<title>Agrotech</title>
 	<link rel="icon" href="app/img/title-logo.png" sizes="192x192">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.1.3/hamburgers.min.css" integrity="sha256-JPv5igMSqm2ztJxtjiup0q6NMWu7L3MbMn9FqyPgfdo=" crossorigin="anonymous" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous" />
 	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightcase/2.5.0/css/lightcase.min.css" integrity="sha256-+bytSlt6ZKCfCCfKimCjD4CsDW9a0GpM85ZCOBDiLVI=" crossorigin="anonymous" />
@@ -18,6 +19,27 @@
 </head>
 <body>
 	<div id="top"></div>
+	<div class="form_container">
+		<form>
+			<legend>
+				<h2>связаться с нами</h2>
+				<div class="close-form"><i class="fas fa-times"></i></div>
+			</legend>
+			<!-- Hidden Required Fields -->
+			<input type="hidden" name="project_name" value="Adelinka">
+			<input type="hidden" name="admin_email" value="adelinkakz727@gmail.com">
+			<input type="hidden" name="form_subject" value="Заявка">
+			<!-- END Hidden Required Fields -->
+			<input type="text" placeholder="Имя" name="Name" id="name">
+			<input type="text" placeholder="Ваш номер телефона" name="Phone" id="phone" required>
+			<button class="btn">Отправить заявку</button>
+			<ul>
+				<li><a href="tel:+77762452359"><img src="app/img/whatsapp.svg" alt="">+7 (776) 245-23-59</a></li>
+				<li><a href="https://wa.me/+77016221111"><img src="app/img/phone.svg" alt="">+7 (701) 622-11-11</a></li>
+				<li><a href="yanglichev.abdulla@inbox.ru"><img src="app/img/mail.svg" alt="">yanglichev.abdulla@inbox.ru</a></li>
+			</ul>
+		</form>
+	</div>
 	<header>
 		<div class="container">
 			<div class="row header-top">
@@ -25,9 +47,11 @@
 					<img src="app/img/logo.png" alt="">
 				</div>
 				<div class="col-xl-7 col-lg-7 col-md-7 order-2 order-xl-2 order-lg-2 order-md-3 menu">
-					<div class="toggle-menu">
-						<span></span>
-					</div>
+					<button class="hamburger hamburger--elastic-r toggle-menu" type="button">
+						<span class="hamburger-box">
+							<span class="hamburger-inner"></span>
+						</span>
+					</button>
 					<div class="menu-wrap">
 						<ul>
 							<li><a href="#top"><i class="fas fa-home"></i></a></li>
@@ -163,7 +187,7 @@
 						<img src="app/img/ovs-25.png" alt="">
 						<div class="take-product">
 							<p>ОВС-25</p>
-							<button class="blick">КУПИТЬ</button>
+							<button class="blick open-modal">КУПИТЬ</button>
 							<a href="" class="blick">ПОДРОБНЕЕ</a>
 						</div>
 					</div>
@@ -172,7 +196,7 @@
 						<img src="app/img/ovs-25.png" alt="">
 						<div class="take-product">
 							<p>SM-25</p>
-							<button class="blick">КУПИТЬ</button>
+							<button class="blick open-modal">КУПИТЬ</button>
 							<a href="" class="blick">ПОДРОБНЕЕ</a>
 						</div>
 					</div>
@@ -181,7 +205,7 @@
 						<img src="app/img/ovs-25.png" alt="">
 						<div class="take-product">
 							<p>petcus-25</p>
-							<button class="blick">КУПИТЬ</button>
+							<button class="blick open-modal">КУПИТЬ</button>
 							<a href="" class="blick">ПОДРОБНЕЕ</a>
 						</div>
 					</div>
@@ -189,7 +213,7 @@
 						<img src="app/img/ovs-25.png" alt="">
 						<div class="take-product">
 							<p>petcus-25</p>
-							<button class="blick">КУПИТЬ</button>
+							<button class="blick open-modal">КУПИТЬ</button>
 							<a href="" class="blick">ПОДРОБНЕЕ</a>
 						</div>
 					</div>
@@ -197,7 +221,7 @@
 						<img src="app/img/ovs-25.png" alt="">
 						<div class="take-product">
 							<p>petcus-25</p>
-							<button class="blick">КУПИТЬ</button>
+							<button class="blick open-modal">КУПИТЬ</button>
 							<a href="" class="blick">ПОДРОБНЕЕ</a>
 						</div>
 					</div>
@@ -205,7 +229,7 @@
 						<img src="app/img/ovs-25.png" alt="">
 						<div class="take-product">
 							<p>petcus-25</p>
-							<button class="blick">КУПИТЬ</button>
+							<button class="blick open-modal">КУПИТЬ</button>
 							<a href="" class="blick">ПОДРОБНЕЕ</a>
 						</div>
 					</div>
@@ -213,7 +237,7 @@
 						<img src="app/img/ovs-25.png" alt="">
 						<div class="take-product">
 							<p>petcus-25</p>
-							<button class="blick">КУПИТЬ</button>
+							<button class="blick open-modal">КУПИТЬ</button>
 							<a href="" class="blick">ПОДРОБНЕЕ</a>
 						</div>
 					</div>
@@ -221,7 +245,7 @@
 						<img src="app/img/ovs-25.png" alt="">
 						<div class="take-product">
 							<p>petcus-25</p>
-							<button class="blick">КУПИТЬ</button>
+							<button class="blick open-modal">КУПИТЬ</button>
 							<a href="" class="blick">ПОДРОБНЕЕ</a>
 						</div>
 					</div>
@@ -229,7 +253,7 @@
 						<img src="app/img/ovs-25.png" alt="">
 						<div class="take-product">
 							<p>petcus-25</p>
-							<button class="blick">КУПИТЬ</button>
+							<button class="blick open-modal">КУПИТЬ</button>
 							<a href="" class="blick">ПОДРОБНЕЕ</a>
 						</div>
 					</div>
@@ -237,7 +261,7 @@
 						<img src="app/img/ovs-25.png" alt="">
 						<div class="take-product">
 							<p>petcus-25</p>
-							<button class="blick">КУПИТЬ</button>
+							<button class="blick open-modal">КУПИТЬ</button>
 							<a href="" class="blick">ПОДРОБНЕЕ</a>
 						</div>
 					</div>
@@ -245,7 +269,7 @@
 						<img src="app/img/ovs-25.png" alt="">
 						<div class="take-product">
 							<p>petcus-25</p>
-							<button class="blick">КУПИТЬ</button>
+							<button class="blick open-modal">КУПИТЬ</button>
 							<a href="" class="blick">ПОДРОБНЕЕ</a>
 						</div>
 					</div>
@@ -253,7 +277,7 @@
 						<img src="app/img/ovs-25.png" alt="">
 						<div class="take-product">
 							<p>petcus-25</p>
-							<button class="blick">КУПИТЬ</button>
+							<button class="blick open-modal">КУПИТЬ</button>
 							<a href="" class="blick">ПОДРОБНЕЕ</a>
 						</div>
 					</div>

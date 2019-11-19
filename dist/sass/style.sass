@@ -5,9 +5,63 @@ $green: #53C546
 @import url('https://fonts.googleapis.com/css?family=Oswald:400,500,600,700&display=swap')
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&display=swap')
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&display=swap&subset=cyrillic,cyrillic-ext')
+
 @keyframes pulse
 	to
 		background-color: rgba(255, 255, 255, .4)
+.form_container
+	position: fixed
+	width: 100%
+	height: 100vh
+	background-color: rgba(0,0,0,.4)
+	z-index: 10000
+	display: flex
+	justify-content: center
+	align-items: center
+	display: none
+	form
+		background-color: #fff
+		display: flex
+		flex-direction: column
+		padding-bottom: 20px
+		ul
+			margin: 0 20px
+			li
+				margin-bottom: 15px
+				a
+					display: flex
+					align-items: center
+					img
+						margin-right: 10px
+		button
+			margin: 0 20px
+			margin-bottom: 40px
+			height: 36px
+			border: none
+			color: #ffffff
+			font-weight: bold
+			font-size: 16px
+			background-color: $green
+			text-transform: uppercase
+		input
+			padding: 10px
+			margin: 0 20px
+			margin-bottom: 20px
+			border: none
+			border-bottom: 1px solid #000
+		legend
+			background-color: $green
+			padding: 10px 60px
+			position: relative
+			margin-bottom: 20px
+			text-transform: uppercase
+			color: #fff
+			.close-form
+				position: absolute
+				top: 10px
+				right: 10px
+				font-size: 24px
+				cursor: pointer
 button.blick, a.blick
 	position: relative
 	overflow: hidden
@@ -26,12 +80,12 @@ button.blick, a.blick
 		width: 40px
 		background-color: rgba(255,255,255,.3)
 		transform: translateY(-300px) rotate(29deg)
-
 *
 	margin: 0
 	padding: 0
 	outline: none
 	box-sizing: border-box
+	user-select: none
 body
 	font-family: 'Open Sans'
 	color: #333333
@@ -81,6 +135,8 @@ header
 		width: 100%
 		display: flex
 		align-items: center
+		.hamburger.toggle-menu
+				display: none
 		.menu-wrap
 			width: 100%
 		ul
@@ -344,6 +400,17 @@ header
 					font-weight: bold
 					color: #fff
 					border-radius: 10px
+.info
+	display: grid
+	div.title
+		display: grid
+		grid-gap: 20px
+		grid-template-columns: repeat(3, 1fr)
+	.table
+		div
+			display: grid
+			grid-gap: 20px
+			grid-template-columns: repeat(3,1fr)
 .s6
 	height: 536px
 	background: url(../img/s6-bg.jpg) no-repeat center center / cover
@@ -555,7 +622,11 @@ footer
 		.container
 			form
 				margin-bottom: 20px
+.form_container.flex
+	display: flex !important
 @media (max-width: 1200px)
+	.hamburger.toggle-menu
+				display: flex !important
 	.s5
 		.container
 			.order-tech
@@ -573,33 +644,38 @@ footer
 					.toggle-menu
 						z-index: 200
 						position: absolute
+						user-select: none
 						right: 5px
 						top: 30px
-						// border: 1px solid
-						height: 35px
 						span
-							display: block
 							width: 50px
-							height: 3px
-							background-color: #333333
-							&:after
-								content: ''
-								display: block
+							&:before, &:after
 								width: 50px
-								height: 3px
-								background-color: #333333
-								position: absolute
-								top: 10px
-								left: 0
-							&:before
-								content: ''
-								display: block
-								width: 50px
-								height: 3px
-								background-color: #333333
-								position: absolute
-								bottom: 10px
-								left: 0
+						// border: 1px solid
+						// height: 35px
+						// span
+						// 	display: block
+						// 	width: 50px
+						// 	height: 3px
+						// 	background-color: #333333
+						// 	&:after
+						// 		content: ''
+						// 		display: block
+						// 		width: 50px
+						// 		height: 3px
+						// 		background-color: #333333
+						// 		position: absolute
+						// 		top: 10px
+						// 		left: 0
+						// 	&:before
+						// 		content: ''
+						// 		display: block
+						// 		width: 50px
+						// 		height: 3px
+						// 		background-color: #333333
+						// 		position: absolute
+						// 		bottom: 10px
+						// 		left: 0
 					ul
 						box-shadow: 0 0 15px 0 #444
 						display: flex
@@ -624,6 +700,22 @@ footer
 						display: block
 						// border: 1px solid
 @media (max-width: 768px)
+	.s5 .container .instruction .instruction_text p
+		position: relative
+		z-index: 10
+	.s5
+		.container
+			z-index: 100
+			position: relative
+			.instruction
+				.instruction_item
+					.royal
+							width: 100%
+	.s5
+		.listik
+			z-index: 0
+		.listik-2
+			z-index: 0
 	.s7
 		.container
 			.gallary
