@@ -38,6 +38,9 @@ $(document).ready(function(){
 	$('.owl-carousel').owlCarousel({
 		loop:true,
 		center: true,
+		autoplay: true,
+		autoplayTimeout: 2000,
+		autoplayHoverPause:true,
 		margin: 10,
 		nav:true,
 		navText: ["<i class='fas fa-chevron-left'></i>","<i class='fas fa-chevron-right'></i>"],
@@ -84,7 +87,7 @@ $(document).ready(function(){
 			"top": newvalueY + 600 +"px"
 		});		
 	});
-	$(".menu ul").on("click","a", function (event) {
+	$(".menu ul").on("click","a.yak", function (event) {
 		event.preventDefault();
 		var id  = $(this).attr('href'),
 		top = $(id).offset().top;
@@ -110,15 +113,10 @@ $(document).ready(function(){
 		var th = $(this);
 		$.ajax({
 			type: "POST",
-			url: "app/mail.php", //Change
+			url: "../mail.php", //Change
 			data: th.serialize()
 		}).done(function() {
-			$('.output').show(500);
-			setTimeout(function() {
-				$('.output').hide(500);
-				// Done Functions
-				th.trigger("reset");
-			}, 1000);
+			alert('Done');
 		});
 		return false;
 	});

@@ -62,7 +62,7 @@ button.blick, a.blick
 	position: relative
 	overflow: hidden
 	&:hover
-		animation: pulse .3s ease-in-out
+		animation: .3s ease-in-out pulse
 		&:before
 			transition: 1s ease-in-out
 			transform: translateX(500px) rotate(29deg)
@@ -263,7 +263,7 @@ header
 	background-position: 100% 100%
 	background-size: cover
 	background-repeat: no-repeat
-	padding-bottom: 400px
+	padding-bottom: 100px
 	padding-top: 50px
 	.filter-container
 		.filter-content
@@ -398,15 +398,33 @@ header
 					border-radius: 10px
 .info
 	display: grid
+	font-size: 14px
 	div.title
 		display: grid
 		grid-gap: 20px
 		grid-template-columns: repeat(3, 1fr)
+		border-radius: 10px 10px 0 0
+		padding: 10px
+		font-weight: bold
+		font-family: 'Open Sans'
+	.subTitle
+		font-weight: bold
 	.table
 		div
 			display: grid
+			border-bottom: 1.5px dotted #56CCF2
+			border-left: 1.5px dotted #56CCF2
+			border-right: 1.5px dotted #56CCF2
 			grid-gap: 20px
 			grid-template-columns: repeat(3,1fr)
+			// padding-top: 20px
+			p
+				padding: 10px 5px
+				&:not(:last-child)
+					border-right: 1.5px dotted #56CCF2
+	.title
+		background-color: #56CCF2
+		font-weight: bold
 .s6
 	height: 536px
 	background: url(../img/s6-bg.jpg) no-repeat center center / cover
@@ -446,7 +464,7 @@ header
 .s7
 	.container
 		.gallary
-			display: grid;
+			display: grid
 			grid-template-columns: repeat(12, 1fr)
 			grid-template-rows: repeat(6, 1fr)
 			grid-column-gap: 0px
@@ -599,6 +617,106 @@ footer
 				margin-top: 20px
 				z-index: 12
 				position: relative
+.the-rest
+	h2.title
+		margin-top: 30px
+		margin-bottom: 10px
+		font-size: 30px
+	.like-this
+		display: grid
+		grid-gap: 10px
+		grid-template-columns: 1fr 1fr
+		.item
+			background-color: #fff
+			box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1)
+			border-radius: 10px
+			overflow: hidden
+			text-align: center
+			img
+				width: 100px
+				margin: 10px auto
+		.take-product
+			background-color: #333333
+			display: grid
+			text-align: center
+			// padding: 0 20px 20px 20px
+			// padding: 0 10px
+			padding-bottom: 10px
+			grid-gap: 0
+			grid-gap: 4px
+			padding: 0 5px 10px 5px
+			text-align: center
+			button, a
+				border: 2px solid
+				border-radius: 10px
+				width: 100px
+				height: 40px
+				display: flex
+				align-items: center
+				justify-content: center
+				font-size: 12px
+				font-weight: bold
+				margin: auto
+			button
+				grid-column: 1 / 2
+				background: none
+				color: $orange
+			a
+				grid-column: 2 / 3
+				color: $green
+			p
+				color: #fff
+				font-size: 24px
+				font-weight: bold
+				grid-column: 1 / 3
+				margin: 15px 0 25px 0
+.product-title
+	h2.title
+		font-size: 18px
+		margin-bottom: 10px
+		&:not(:first-child)
+			margin-top: 20px
+	p
+		margin-left: 20px
+.right-side
+	button
+		width: 100%
+		height: 44px
+		border: none
+		background-color: $green
+		margin-top: 20px
+		font-size: 18px
+		border-radius: 10px
+		color: #fff
+		font-weight: bold
+.description
+	background-color: #fff
+	border-radius: 10px
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1)
+	padding: 10px
+.mini-gallary
+	display: grid
+	grid-template-columns: repeat(4, 1fr)
+	grid-template-rows: auto auto
+	grid-gap: 0 10px
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1)
+	border-radius: 10px
+	height: auto
+	background-color: #fff
+	overflow: hidden
+	img
+		display: block
+		width: 100%
+		&:first-child
+			grid-area: 1 / 1 / 2 / 6
+		&:nth-child(2)
+			grid-area: 2 / 1 / 3 / 2
+		&:nth-child(3)
+			grid-area: 2 / 2 / 3 / 3
+		&:nth-child(4)
+			grid-area: 2 / 3 / 3 / 4
+		&:last-child
+			grid-area: 2 / 4 / 3 / 5
 @media (max-width: 1440px)
 	h2.title
 		font-size: 35px
@@ -696,6 +814,59 @@ footer
 						display: block
 						// border: 1px solid
 @media (max-width: 768px)
+	header .main-header_cart
+		padding-bottom: 50px
+	footer
+		border: 1px solid
+		padding-bottom: 0
+	.map
+		height: 300px
+		position: relative
+	.info
+		display: grid
+		font-size: 14px
+		div.title
+			display: grid
+			grid-gap: 20px
+			grid-template-columns: 130px 80px 70px
+			border-radius: 10px 10px 0 0
+			padding: 10px
+			font-weight: bold
+			font-family: 'Open Sans'
+		.subTitle
+			font-weight: bold
+		.table
+			div
+				display: grid
+				border-bottom: 1.5px dotted #56CCF2
+				border-left: 1.5px dotted #56CCF2
+				border-right: 1.5px dotted #56CCF2
+				grid-gap: 20px
+				grid-template-columns: 160px 50px auto
+				// padding-top: 20px
+				p
+					padding: 10px 5px
+					&:not(:last-child)
+						border-right: 1.5px dotted #56CCF2
+		.title
+			background-color: #56CCF2
+			font-weight: bold
+
+
+	.the-rest
+		.like-this
+			.item
+				.take-product
+					button
+						grid-column: 1 / 3
+						grid-row: 2 / 3
+						background: none
+						color: $orange
+					a
+						grid-row: 3 / 4
+						grid-column: 1 / 3
+						color: $green
+
 	.s5 .container .instruction .instruction_text p
 		position: relative
 		z-index: 10
